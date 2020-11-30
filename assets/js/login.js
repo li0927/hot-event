@@ -60,6 +60,7 @@ $(function(){
              if(res.status!==0) return layui.layer.msg(res.message)
              localStorage.setItem('token',res.token)
              console.log(res.token);
+             window.location='/index.html'
             }
         })
     })
